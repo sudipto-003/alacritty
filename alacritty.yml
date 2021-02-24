@@ -93,94 +93,94 @@
   # and `light`. Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  #history: 10000
+  history: 10000
 
   # Scrolling distance multiplier.
-  #multiplier: 3
+  multiplier: 3
 
 # Font configuration
-#font:
+font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: monospace
+    family: Droid Sans Mono
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Regular
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Cantarell
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Bold
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Hack
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Cantarell
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+    style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
-  #offset:
-  #  x: 0
-  #  y: 0
+  offset:
+    x: 0
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+  glyph_offset:
+    x: 0
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  #use_thin_strokes: true
+  use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#000000'
+    foreground: '#44d4fc'
 
     # Bright and dim foreground colors
     #
@@ -197,9 +197,9 @@
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  cursor:
+    text: '#d0ec42'
+    cursor: '#3ec86a'
 
   # Vi mode cursor colors
   #
@@ -214,19 +214,19 @@
   # Search colors
   #
   # Colors used for the search bar and match highlighting.
-  #search:
+  search:
     # Allowed values are CellForeground and CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: CellBackground
-    #  background: CellForeground
+    matches:
+      foreground: '#7f4bd8'
+      background: '#000000'
+    focused_match:
+      foreground: '#58b483'
+      background: '#000000'
 
-    #bar:
-    #  background: '#c5c8c6'
-    #  foreground: '#1d1f21'
+    bar:
+      background: '#000000'
+      foreground: '#43b420'
 
   # Line indicator
   #
@@ -249,26 +249,26 @@
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+  normal:
+    black:   '#020103'
+    red:     '#c30f12'
+    green:   '#2da135'
+    yellow:  '#eaea37'
+    blue:    '#3c44ea'
+    magenta: '#d03dea'
+    cyan:    '#72eae2'
+    white:   '#eae4e6'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+  bright:
+    black:   '#1f1e1f'
+    red:     '#f71625'
+    green:   '#1aeb32'
+    yellow:  '#1aeb32'
+    blue:    '#4f07eb'
+    magenta: '#e410eb'
+    cyan:    '#0debe4'
+    white:   '#ebe5e0'
 
   # Dim colors
   #
@@ -297,7 +297,7 @@
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
-#bell:
+bell:
   # Visual Bell Animation
   #
   # Animation effect for flashing the screen when the visual bell is rung.
@@ -313,14 +313,14 @@
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  #animation: EaseOutExpo
+  animation: EaseOutCirc
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  #duration: 0
+  duration: 10
 
   # Visual bell animation color.
-  #color: '#ffffff'
+  color: '#75726f'
 
   # Bell Command
   #
@@ -339,26 +339,26 @@
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+background_opacity: 0.3
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: true
 
-#cursor:
+cursor:
   # Cursor style
-  #style:
+  style:
     # Cursor shape
     #
     # Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    #shape: Block
+    shape: Underline
 
     # Cursor blinking state
     #
@@ -367,7 +367,7 @@
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+    blinking: On
 
   # Vi mode cursor style
   #
@@ -378,11 +378,11 @@
   #vi_mode_style: None
 
   # Cursor blinking interval in milliseconds.
-  #blink_interval: 750
+  blink_interval: 750
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  #unfocused_hollow: true
+  unfocused_hollow: true
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
@@ -401,8 +401,8 @@
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /usr/bin/fish
 #  args:
 #    - --login
 
@@ -410,12 +410,12 @@
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-#working_directory: None
+working_directory: ~/
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-#mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
@@ -425,7 +425,7 @@
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  #hide_when_typing: false
+  hide_when_typing: false
 
   #url:
     # URL launcher
@@ -680,15 +680,15 @@
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
-  #- { key: Paste,                                       action: Paste          }
-  #- { key: Copy,                                        action: Copy           }
-  #- { key: L,         mods: Control,                    action: ClearLogNotice }
-  #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
-  #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
-  #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
-  #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
-  #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
+key_bindings:
+  - { key: Paste,                                       action: Paste          }
+  - { key: Copy,                                        action: Copy           }
+  - { key: L,         mods: Control,                    action: ClearLogNotice }
+  - { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
+  - { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
+  - { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
+  - { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
+  - { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
   # Vi Mode
   #- { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
@@ -740,31 +740,31 @@
   #- { key: N,      mods: Shift,         mode: Vi|~Search, action: SearchPrevious          }
 
   # Search Mode
-  #- { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
-  #- { key: Escape,                mode: Search,     action: SearchCancel          }
-  #- { key: C,      mods: Control, mode: Search,     action: SearchCancel          }
-  #- { key: U,      mods: Control, mode: Search,     action: SearchClear           }
-  #- { key: W,      mods: Control, mode: Search,     action: SearchDeleteWord      }
-  #- { key: P,      mods: Control, mode: Search,     action: SearchHistoryPrevious }
-  #- { key: N,      mods: Control, mode: Search,     action: SearchHistoryNext     }
-  #- { key: Up,                    mode: Search,     action: SearchHistoryPrevious }
-  #- { key: Down,                  mode: Search,     action: SearchHistoryNext     }
-  #- { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
-  #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
+  - { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
+  - { key: Escape,                mode: Search,     action: SearchCancel          }
+  - { key: C,      mods: Control, mode: Search,     action: SearchCancel          }
+  - { key: U,      mods: Control, mode: Search,     action: SearchClear           }
+  - { key: W,      mods: Control, mode: Search,     action: SearchDeleteWord      }
+  - { key: P,      mods: Control, mode: Search,     action: SearchHistoryPrevious }
+  - { key: N,      mods: Control, mode: Search,     action: SearchHistoryNext     }
+  - { key: Up,                    mode: Search,     action: SearchHistoryPrevious }
+  - { key: Down,                  mode: Search,     action: SearchHistoryNext     }
+  - { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
+  - { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (Windows, Linux, and BSD only)
-  #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
-  #- { key: C,              mods: Control|Shift,                   action: Copy             }
-  #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
-  #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
-  #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
-  #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
-  #- { key: Key0,           mods: Control,                         action: ResetFontSize    }
-  #- { key: Equals,         mods: Control,                         action: IncreaseFontSize }
-  #- { key: Plus,           mods: Control,                         action: IncreaseFontSize }
-  #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
-  #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
-  #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
+  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  - { key: C,              mods: Control|Shift,                   action: Copy             }
+  - { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
+  - { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  - { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
+  - { key: Insert,         mods: Shift,                           action: PasteSelection   }
+  - { key: Key0,           mods: Control,                         action: ResetFontSize    }
+  - { key: Equals,         mods: Control,                         action: IncreaseFontSize }
+  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  - { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
+  - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+  - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
